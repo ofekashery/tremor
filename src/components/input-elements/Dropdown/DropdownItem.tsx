@@ -29,8 +29,8 @@ const DropdownItem = ({ value, text, icon }: DropdownItemProps) => {
       onClick={() => handleValueChange?.(value)}
       className={classNames(
         "input-elem tr-flex tr-items-center tr-justify-between tr-w-full",
-        spacing.twoXl.paddingLeft,
-        spacing.twoXl.paddingRight,
+        spacing.twoXl.paddingStart,
+        spacing.twoXl.paddingEnd,
         spacing.md.paddingTop,
         spacing.md.paddingBottom,
         fontSize.sm,
@@ -56,7 +56,7 @@ const DropdownItem = ({ value, text, icon }: DropdownItemProps) => {
               "tr-flex-none",
               sizing.lg.height,
               sizing.lg.width,
-              spacing.lg.marginRight,
+              spacing.lg.marginEnd,
               getColorVariantsFromColorThemeValue(defaultColors.lightText)
                 .textColor
             )}

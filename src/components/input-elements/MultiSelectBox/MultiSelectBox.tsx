@@ -143,8 +143,8 @@ const MultiSelectBox = <T,>({
         className={classNames(
           "input-elem tr-flex tr-justify-between tr-items-center tr-w-full",
           "focus:tr-ring-0 focus:tr-outline-0",
-          Icon ? spacing.xl.paddingLeft : spacing.twoXl.paddingLeft,
-          spacing.twoXl.paddingRight,
+          Icon ? spacing.xl.paddingStart : spacing.twoXl.paddingStart,
+          spacing.twoXl.paddingEnd,
           spacing.sm.paddingTop,
           spacing.sm.paddingBottom
         )}
@@ -159,7 +159,7 @@ const MultiSelectBox = <T,>({
                 sizing.lg.width,
                 getColorVariantsFromColorThemeValue(defaultColors.lightText)
                   .textColor,
-                spacing.lg.marginRight
+                spacing.lg.marginEnd
               )}
               aria-hidden="true"
             />
@@ -183,7 +183,7 @@ const MultiSelectBox = <T,>({
           {showResetButton ? (
             <div
               role="button"
-              className={classNames(spacing.xs.marginRight)}
+              className={classNames(spacing.xs.marginEnd)}
               onClick={(e) => {
                 e.stopPropagation(); // prevent firing parent button
                 handleReset();
@@ -206,7 +206,7 @@ const MultiSelectBox = <T,>({
               "tr-flex-none",
               sizing.lg.height,
               sizing.lg.width,
-              spacing.twoXs.negativeMarginRight,
+              spacing.twoXs.negativeMarginEnd,
               getColorVariantsFromColorThemeValue(defaultColors.lightText)
                 .textColor
             )}
@@ -224,8 +224,8 @@ const MultiSelectBox = <T,>({
             "tr-flex tr-items-center tr-w-full",
             getColorVariantsFromColorThemeValue(defaultColors.canvasBackground)
               .bgColor,
-            spacing.twoXl.paddingLeft,
-            spacing.twoXl.paddingRight
+            spacing.twoXl.paddingStart,
+            spacing.twoXl.paddingEnd
           )}
         >
           <span>
@@ -234,8 +234,8 @@ const MultiSelectBox = <T,>({
                 "tr-flex-none",
                 getColorVariantsFromColorThemeValue(defaultColors.lightText)
                   .textColor,
-                spacing.threeXs.negativeMarginLeft,
-                spacing.lg.marginRight,
+                spacing.threeXs.negativeMarginStart,
+                spacing.lg.marginEnd,
                 sizing.md.height,
                 sizing.md.width
               )}

@@ -11,8 +11,8 @@ const AccordionBody = ({ children }: AccordionBodyProps) => {
     <div
       className={classNames(
         "tr-w-full",
-        spacing.threeXl.paddingLeft,
-        spacing.threeXl.paddingRight,
+        spacing.threeXl.paddingStart,
+        spacing.threeXl.paddingEnd,
         spacing.lg.paddingBottom
       )}
     >

@@ -141,7 +141,7 @@ const SelectBox = <T,>({
         {Icon ? (
           <button
             type="button"
-            className={classNames("input-elem tr-p-0", spacing.xl.marginLeft)}
+            className={classNames("input-elem tr-p-0", spacing.xl.marginStart)}
           >
             <Icon
               className={classNames(
@@ -162,14 +162,14 @@ const SelectBox = <T,>({
             "input-elem tr-w-full focus:tr-outline-0 focus:tr-ring-0 tr-bg-inherit",
             getColorVariantsFromColorThemeValue(defaultColors.darkText)
               .textColor,
-            Icon ? spacing.lg.paddingLeft : spacing.twoXl.paddingLeft,
+            Icon ? spacing.lg.paddingStart : spacing.twoXl.paddingStart,
             spacing.sm.paddingTop,
             spacing.sm.paddingBottom,
             fontSize.sm,
             fontWeight.md,
             border.none.all,
             "placeholder:tr-text-gray-500",
-            "tr-pr-10" // avoid text overflow at arrow down icon
+            "tr-pe-10" // avoid text overflow at arrow down icon
           )}
           placeholder={placeholder}
           value={inputValue}
@@ -179,7 +179,7 @@ const SelectBox = <T,>({
           type="button"
           className={classNames(
             "input-elem tr-absolute tr-top-1/2 -tr-translate-y-1/2 tr-bg-inherit",
-            spacing.twoXl.right
+            spacing.twoXl.end
           )}
         >
           <ArrowDownHeadIcon
@@ -187,7 +187,7 @@ const SelectBox = <T,>({
               "tr-flex-none",
               sizing.lg.height,
               sizing.lg.width,
-              spacing.twoXs.negativeMarginRight,
+              spacing.twoXs.negativeMarginEnd,
               getColorVariantsFromColorThemeValue(defaultColors.lightText)
                 .textColor
             )}

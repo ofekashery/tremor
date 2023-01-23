@@ -84,8 +84,8 @@ const CalendarHeader = ({
     <div
       className={classNames(
         "tr-flex tr-justify-between tr-items-center",
-        spacing.twoXs.paddingLeft,
-        spacing.twoXs.paddingRight,
+        spacing.twoXs.paddingStart,
+        spacing.twoXs.paddingEnd,
         spacing.sm.paddingTop,
         spacing.sm.paddingBottom
       )}
@@ -102,8 +102,8 @@ const CalendarHeader = ({
               .borderColor,
             getColorVariantsFromColorThemeValue(defaultColors.ring)
               .focusRingColor,
-            spacing.twoXs.paddingLeft,
-            spacing.twoXs.paddingRight,
+            spacing.twoXs.paddingStart,
+            spacing.twoXs.paddingEnd,
             spacing.twoXs.paddingTop,
             spacing.twoXs.paddingBottom,
             fontSize.sm,
@@ -116,6 +116,7 @@ const CalendarHeader = ({
         >
           <DoubleArrowLeftHeadIcon
             className={classNames(
+              "rtl:tr-scale-x-[-1]",
               getColorVariantsFromColorThemeValue(defaultColors.darkText)
                 .textColor,
               sizing.lg.height,
@@ -135,8 +136,8 @@ const CalendarHeader = ({
               .borderColor,
             getColorVariantsFromColorThemeValue(defaultColors.ring)
               .focusRingColor,
-            spacing.twoXs.paddingLeft,
-            spacing.twoXs.paddingRight,
+            spacing.twoXs.paddingStart,
+            spacing.twoXs.paddingEnd,
             spacing.twoXs.paddingTop,
             spacing.twoXs.paddingBottom,
             fontSize.sm,
@@ -149,6 +150,7 @@ const CalendarHeader = ({
         >
           <ArrowLeftHeadIcon
             className={classNames(
+              "rtl:tr-scale-x-[-1]",
               getColorVariantsFromColorThemeValue(defaultColors.darkText)
                 .textColor,
               sizing.lg.height,
@@ -181,8 +183,8 @@ const CalendarHeader = ({
               .borderColor,
             getColorVariantsFromColorThemeValue(defaultColors.ring)
               .focusRingColor,
-            spacing.twoXs.paddingLeft,
-            spacing.twoXs.paddingRight,
+            spacing.twoXs.paddingStart,
+            spacing.twoXs.paddingEnd,
             spacing.twoXs.paddingTop,
             spacing.twoXs.paddingBottom,
             fontSize.sm,
@@ -195,6 +197,7 @@ const CalendarHeader = ({
         >
           <ArrowRightHeadIcon
             className={classNames(
+              "rtl:tr-scale-x-[-1]",
               getColorVariantsFromColorThemeValue(defaultColors.darkText)
                 .textColor,
               sizing.lg.height,
@@ -214,8 +217,8 @@ const CalendarHeader = ({
               .borderColor,
             getColorVariantsFromColorThemeValue(defaultColors.ring)
               .focusRingColor,
-            spacing.twoXs.paddingLeft,
-            spacing.twoXs.paddingRight,
+            spacing.twoXs.paddingStart,
+            spacing.twoXs.paddingEnd,
             spacing.twoXs.paddingTop,
             spacing.twoXs.paddingBottom,
             fontSize.sm,
@@ -228,7 +231,7 @@ const CalendarHeader = ({
         >
           <DoubleArrowRightHeadIcon
             className={classNames(
-              "tr-shrink-0 tr-flex-0",
+              "tr-shrink-0 tr-flex-0 rtl:tr-scale-x-[-1]",
               getColorVariantsFromColorThemeValue(defaultColors.darkText)
                 .textColor,
               sizing.lg.height,
@@ -385,8 +388,8 @@ const Calendar = ({
   return (
     <div
       className={classNames(
-        spacing.lg.paddingLeft,
-        spacing.lg.paddingRight,
+        spacing.lg.paddingStart,
+        spacing.lg.paddingEnd,
         spacing.twoXs.paddingTop,
         spacing.twoXs.paddingBottom
       )}

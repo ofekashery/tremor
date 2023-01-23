@@ -50,9 +50,9 @@ export const ButtonIconOrSpinner = ({
   Icon = Icon!;
 
   const margin =
-    iconPosition === HorizontalPositions.Left
-      ? classNames(spacing.twoXs.negativeMarginLeft, spacing.xs.marginRight)
-      : classNames(spacing.twoXs.negativeMarginRight, spacing.xs.marginLeft);
+    iconPosition === HorizontalPositions.Start
+      ? classNames(spacing.twoXs.negativeMarginStart, spacing.xs.marginEnd)
+      : classNames(spacing.twoXs.negativeMarginEnd, spacing.xs.marginStart);
 
   const defaultSpinnerSize = classNames(sizing.none.width, sizing.none.height);
   const spinnerSize: { [key: string]: any } = {
@@ -104,7 +104,7 @@ const Button = ({
   text,
   value,
   icon,
-  iconPosition = HorizontalPositions.Left,
+  iconPosition = HorizontalPositions.Start,
   handleClick, // Deprecated
   onClick,
   onSubmit,
@@ -198,7 +198,7 @@ const Button = ({
             disabled={isDisabled}
           >
             {showButtonIconOrSpinner &&
-            iconPosition !== HorizontalPositions.Right ? (
+            iconPosition !== HorizontalPositions.End ? (
               <ButtonIconOrSpinner
                 loading={loading}
                 iconSize={iconSize}
@@ -213,7 +213,7 @@ const Button = ({
               </p>
             }
             {showButtonIconOrSpinner &&
-            iconPosition === HorizontalPositions.Right ? (
+            iconPosition === HorizontalPositions.End ? (
               <ButtonIconOrSpinner
                 loading={loading}
                 iconSize={iconSize}

@@ -117,16 +117,16 @@ const DateRangePickerButton = ({
           `input-elem tr-flex tr-items-center tr-w-full tr-truncate focus:tr-ring-0
                      focus:tr-outline-0`,
           enableDropdown
-            ? border.none.right
-            : classNames(borderRadius.md.right, border.sm.right),
+            ? border.none.end
+            : classNames(borderRadius.md.end, border.sm.end),
           getColorVariantsFromColorThemeValue(defaultColors.border).borderColor,
           getColorVariantsFromColorThemeValue(defaultColors.canvasBackground)
             .hoverBgColor,
-          spacing.twoXl.paddingLeft,
-          spacing.twoXl.paddingRight,
+          spacing.twoXl.paddingStart,
+          spacing.twoXl.paddingEnd,
           spacing.sm.paddingTop,
           spacing.sm.paddingBottom,
-          borderRadius.md.left,
+          borderRadius.md.start,
           border.sm.all
         )}
       >
@@ -137,8 +137,8 @@ const DateRangePickerButton = ({
               .textColor,
             sizing.lg.height,
             sizing.lg.width,
-            spacing.threeXs.negativeMarginLeft,
-            spacing.lg.marginRight
+            spacing.threeXs.negativeMarginStart,
+            spacing.lg.marginEnd
           )}
           aria-hidden="true"
         />
@@ -169,12 +169,12 @@ const DateRangePickerButton = ({
               .hoverBgColor,
             getColorVariantsFromColorThemeValue(defaultColors.border)
               .borderColor,
-            spacing.twoXl.paddingLeft,
-            spacing.twoXl.paddingRight,
-            spacing.px.negativeMarginLeft,
+            spacing.twoXl.paddingStart,
+            spacing.twoXl.paddingEnd,
+            spacing.px.negativeMarginStart,
             spacing.sm.paddingTop,
             spacing.sm.paddingBottom,
-            borderRadius.md.right,
+            borderRadius.md.end,
             border.sm.all
           )}
           onKeyDown={onDropdownKeyDown}
@@ -198,7 +198,7 @@ const DateRangePickerButton = ({
               "tr-flex-none",
               sizing.lg.height,
               sizing.lg.width,
-              spacing.twoXs.negativeMarginRight,
+              spacing.twoXs.negativeMarginEnd,
               getColorVariantsFromColorThemeValue(defaultColors.lightText)
                 .textColor
             )}

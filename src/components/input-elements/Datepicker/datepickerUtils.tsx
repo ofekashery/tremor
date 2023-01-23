@@ -352,7 +352,7 @@ export const getDayRoundedClassName = (
     return borderRadius.md.all;
   }
   if (selectedStartDay && selectedEndDay && isEqual(day, selectedStartDay)) {
-    return borderRadius.md.left;
+    return borderRadius.md.start;
   }
   if (
     selectedStartDay &&
@@ -377,7 +377,7 @@ export const getDayRoundedClassName = (
     isEqual(day, selectedStartDay) &&
     hoveredDay > selectedStartDay
   ) {
-    return borderRadius.md.left;
+    return borderRadius.md.start;
   }
   if (
     selectedStartDay &&
@@ -403,10 +403,10 @@ export const getDayRoundedClassName = (
     isEqual(day, hoveredDay) &&
     !isEqual(day, selectedStartDay)
   ) {
-    return borderRadius.md.right;
+    return borderRadius.md.end;
   }
   if (selectedStartDay && selectedEndDay && isEqual(day, selectedEndDay)) {
-    return borderRadius.md.right;
+    return borderRadius.md.end;
   }
   if (
     selectedStartDay &&

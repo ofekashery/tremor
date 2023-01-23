@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 module.exports = {
+    mode: 'jit',
     content: [
         './src/components/**/*.{html,js,jsx,ts,tsx}',
         './src/lib/**/*.{html,js,jsx,ts,tsx}'
@@ -11,7 +12,9 @@ module.exports = {
         'hover-blue': '#005CC6',
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require('tailwindcss-rtl'),
+    ],
     corePlugins: {
         preflight: false,
     },

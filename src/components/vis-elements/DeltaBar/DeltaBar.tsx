@@ -55,7 +55,7 @@ const DeltaBar = ({
               <div
                 className={classNames(
                   colors[deltaType].bgColor,
-                  borderRadius.full.left
+                  borderRadius.full.start
                 )}
                 style={{
                   width: `${Math.abs(percentageValue)}%`,
@@ -82,7 +82,7 @@ const DeltaBar = ({
               <div
                 className={classNames(
                   colors[deltaType].bgColor,
-                  borderRadius.full.right
+                  borderRadius.full.end
                 )}
                 style={{
                   width: `${Math.abs(percentageValue)}%`,

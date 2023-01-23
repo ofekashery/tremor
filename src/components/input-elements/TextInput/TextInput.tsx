@@ -94,7 +94,7 @@ const TextInput = ({
             sizing.lg.width,
             getColorVariantsFromColorThemeValue(defaultColors.lightText)
               .textColor,
-            spacing.xl.marginLeft
+            spacing.xl.marginStart
           )}
           aria-hidden="true"
         />
@@ -107,8 +107,8 @@ const TextInput = ({
           "tremor-base input-elem",
           "tr-w-full focus:tr-outline-0 focus:tr-ring-0 tr-bg-inherit",
           textColor,
-          Icon ? spacing.lg.paddingLeft : spacing.twoXl.paddingLeft,
-          error ? spacing.lg.paddingRight : spacing.twoXl.paddingRight,
+          Icon ? spacing.lg.paddingStart : spacing.twoXl.paddingStart,
+          error ? spacing.lg.paddingEnd : spacing.twoXl.paddingEnd,
           spacing.sm.paddingTop,
           spacing.sm.paddingBottom,
           fontSize.sm,
@@ -128,7 +128,7 @@ const TextInput = ({
           className={errorMessage ? "" : "tr-hidden"}
           showOnCreate={true}
         >
-          <div className={classNames(spacing.xl.marginRight)}>
+          <div className={classNames(spacing.xl.marginEnd)}>
             <ExclamationFilledIcon
               className={classNames(
                 sizing.lg.height,

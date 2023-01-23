@@ -90,7 +90,7 @@ const BarLabels = ({
       <div
         className={classNames(
           "tr-absolute tr-bottom-0 tr-flex tr-items-center",
-          spacing.none.left
+          spacing.none.start
         )}
       >
         0
@@ -98,7 +98,7 @@ const BarLabels = ({
       <div
         className={classNames(
           "tr-absolute tr-bottom-0 tr-flex tr-items-center",
-          spacing.none.right
+          spacing.none.end
         )}
       >
         {sumValues}

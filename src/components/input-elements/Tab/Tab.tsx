@@ -48,8 +48,8 @@ const Tab = ({ value, text, icon }: TabProps) => {
         className={classNames(
           "input-elem tr-flex tr-whitespace-nowrap tr-max-w-xs tr-truncate",
           "focus:tr-outline-0 focus:tr-ring-0",
-          spacing.twoXs.paddingRight,
-          spacing.twoXs.paddingLeft,
+          spacing.twoXs.paddingEnd,
+          spacing.twoXs.paddingStart,
           spacing.sm.paddingTop,
           spacing.sm.paddingBottom,
           spacing.px.negativeMarginBottom,
@@ -66,7 +66,7 @@ const Tab = ({ value, text, icon }: TabProps) => {
               "tr-flex-none",
               sizing.lg.height,
               sizing.lg.width,
-              spacing.sm.marginRight,
+              spacing.sm.marginEnd,
               isActive
                 ? getColorVariantsFromColorThemeValue(getColorTheme(color).text)
                     .textColor

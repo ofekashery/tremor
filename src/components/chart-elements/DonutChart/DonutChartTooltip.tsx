@@ -24,8 +24,8 @@ export const DonutChartTooltip = ({
       <ChartTooltipFrame>
         <div
           className={classNames(
-            spacing.twoXl.paddingLeft,
-            spacing.twoXl.paddingRight,
+            spacing.twoXl.paddingStart,
+            spacing.twoXl.paddingEnd,
             spacing.sm.paddingTop,
             spacing.sm.paddingBottom
           )}

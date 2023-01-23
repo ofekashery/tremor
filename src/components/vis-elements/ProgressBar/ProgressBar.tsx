@@ -76,7 +76,7 @@ const ProgressBar = ({
             "tr-w-16 tr-truncate tr-text-right",
             getColorVariantsFromColorThemeValue(defaultColors.darkText)
               .textColor,
-            spacing.sm.marginLeft
+            spacing.sm.marginStart
           )}
         >
           <p

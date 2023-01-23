@@ -44,16 +44,16 @@ const Callout = ({
         ).bgColor,
         getColorVariantsFromColorThemeValue(getColorTheme(color).darkBorder)
           .borderColor,
-        spacing.lg.paddingLeft,
-        spacing.lg.paddingRight,
+        spacing.lg.paddingStart,
+        spacing.lg.paddingEnd,
         spacing.lg.paddingTop,
         spacing.lg.paddingBottom,
         fontSize.sm,
         borderRadius.md.all,
-        border.lg.left
+        border.lg.start
       )}
     >
-      <div className={classNames("tr-overflow-hidden", spacing.xs.marginLeft)}>
+      <div className={classNames("tr-overflow-hidden", spacing.xs.marginStart)}>
         <div
           className={classNames(
             "tr-flex tr-items-start",
@@ -67,7 +67,7 @@ const Callout = ({
                 "tr-flex-none",
                 sizing.lg.height,
                 sizing.lg.width,
-                spacing.xs.marginRight
+                spacing.xs.marginEnd
               )}
               aria-hidden="true"
             />

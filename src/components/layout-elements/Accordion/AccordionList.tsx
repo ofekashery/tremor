@@ -38,9 +38,9 @@ const AccordionList = ({
             <RootStylesContext.Provider
               value={classNames(
                 borderRadius.lg.top,
-                border.sm.left,
+                border.sm.start,
                 border.sm.top,
-                border.sm.right,
+                border.sm.end,
                 border.sm.bottom,
                 boxShadow.none
               )}
@@ -54,8 +54,8 @@ const AccordionList = ({
             <RootStylesContext.Provider
               value={classNames(
                 borderRadius.lg.bottom,
-                border.sm.left,
-                border.sm.right,
+                border.sm.start,
+                border.sm.end,
                 border.sm.bottom,
                 boxShadow.none
               )}
@@ -67,8 +67,8 @@ const AccordionList = ({
         return (
           <RootStylesContext.Provider
             value={classNames(
-              border.sm.left,
-              border.sm.right,
+              border.sm.start,
+              border.sm.end,
               border.sm.bottom,
               boxShadow.none
             )}

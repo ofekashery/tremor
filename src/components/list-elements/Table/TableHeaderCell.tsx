@@ -27,8 +27,8 @@ const TableHeaderCell = ({
         parseTextAlignment(textAlignment),
         getColorVariantsFromColorThemeValue(defaultColors.text).textColor,
         spacing.none.top,
-        spacing.twoXl.paddingLeft,
-        spacing.twoXl.paddingRight,
+        spacing.twoXl.paddingStart,
+        spacing.twoXl.paddingEnd,
         spacing.xl.paddingTop,
         spacing.xl.paddingBottom,
         fontWeight.lg

@@ -16,11 +16,11 @@ const Footer = ({ height = "h-14", children }: FooterProps) => {
         className={classNames(
           "tremor-base tr-absolute tr-flex tr-items-center tr-w-full",
           parseHeight(height),
-          spacing.none.left,
-          spacing.none.right,
+          spacing.none.start,
+          spacing.none.end,
           spacing.none.bottom,
-          spacing.threeXl.paddingLeft,
-          spacing.threeXl.paddingRight,
+          spacing.threeXl.paddingStart,
+          spacing.threeXl.paddingEnd,
           border.sm.top
         )}
       >

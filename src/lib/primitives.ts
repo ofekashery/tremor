@@ -71,8 +71,8 @@ export const ButtonVariants: { [key: string]: ButtonVariant } = {
 };
 
 export const HorizontalPositions: { [key: string]: HorizontalPosition } = {
-  Left: "left",
-  Right: "right",
+  Start: "start",
+  End: "end",
 };
 
 export const VerticalPositions: { [key: string]: VerticalPosition } = {

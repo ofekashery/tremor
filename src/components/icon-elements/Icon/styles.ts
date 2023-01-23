@@ -21,32 +21,32 @@ export type WrapperProportionTypes = {
 
 export const wrapperProportions: { [size: string]: WrapperProportionTypes } = {
   xs: {
-    paddingLeft: spacing.xs.paddingLeft,
-    paddingRight: spacing.xs.paddingRight,
+    paddingLeft: spacing.xs.paddingStart,
+    paddingRight: spacing.xs.paddingEnd,
     paddingTop: spacing.xs.paddingTop,
     paddingBottom: spacing.xs.paddingBottom,
   },
   sm: {
-    paddingLeft: spacing.xs.paddingLeft,
-    paddingRight: spacing.xs.paddingRight,
+    paddingLeft: spacing.xs.paddingStart,
+    paddingRight: spacing.xs.paddingEnd,
     paddingTop: spacing.xs.paddingTop,
     paddingBottom: spacing.xs.paddingBottom,
   },
   md: {
-    paddingLeft: spacing.sm.paddingLeft,
-    paddingRight: spacing.sm.paddingRight,
+    paddingLeft: spacing.sm.paddingStart,
+    paddingRight: spacing.sm.paddingEnd,
     paddingTop: spacing.sm.paddingTop,
     paddingBottom: spacing.sm.paddingBottom,
   },
   lg: {
-    paddingLeft: spacing.sm.paddingLeft,
-    paddingRight: spacing.sm.paddingRight,
+    paddingLeft: spacing.sm.paddingStart,
+    paddingRight: spacing.sm.paddingEnd,
     paddingTop: spacing.sm.paddingTop,
     paddingBottom: spacing.sm.paddingBottom,
   },
   xl: {
-    paddingLeft: spacing.md.paddingLeft,
-    paddingRight: spacing.md.paddingRight,
+    paddingLeft: spacing.md.paddingStart,
+    paddingRight: spacing.md.paddingEnd,
     paddingTop: spacing.md.paddingTop,
     paddingBottom: spacing.md.paddingBottom,
   },

@@ -102,8 +102,8 @@ const ChartTooltip = ({
           className={classNames(
             getColorVariantsFromColorThemeValue(defaultColors.lightBorder)
               .borderColor,
-            spacing.twoXl.paddingLeft,
-            spacing.twoXl.paddingRight,
+            spacing.twoXl.paddingStart,
+            spacing.twoXl.paddingEnd,
             spacing.sm.paddingTop,
             spacing.sm.paddingBottom,
             border.sm.bottom
@@ -123,8 +123,8 @@ const ChartTooltip = ({
 
         <div
           className={classNames(
-            spacing.twoXl.paddingLeft,
-            spacing.twoXl.paddingRight,
+            spacing.twoXl.paddingStart,
+            spacing.twoXl.paddingEnd,
             spacing.sm.paddingTop,
             spacing.sm.paddingBottom,
             "tr-space-y-1"

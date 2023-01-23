@@ -34,7 +34,7 @@ const Modal = ({
   triggerRef,
   width,
   maxHeight = "tr-max-h-72",
-  anchorPosition = HorizontalPositions.Left,
+  anchorPosition = HorizontalPositions.Start,
   children,
 }: ModalProps) => {
   const [modalExceedsWindow, setModalExceedsWindow] = useState(false);
@@ -48,12 +48,18 @@ const Modal = ({
     if (!triggerRef.current) {
       return false;
     }
-    if (anchorPosition === HorizontalPositions.Left) {
+    const isRTL = getComputedStyle(triggerRef.current).direction === "rtl";
+    if (
+      (!isRTL && anchorPosition === HorizontalPositions.Start) ||
+      (isRTL && anchorPosition === HorizontalPositions.End)
+    ) {
       const modalBoundingRight =
         triggerRef.current.getBoundingClientRect().left + modalWidth;
       return windowWidth - modalBoundingRight < 0;
-    }
-    if (anchorPosition === HorizontalPositions.Right) {
+    } else if (
+      (!isRTL && anchorPosition === HorizontalPositions.End) ||
+      (isRTL && anchorPosition === HorizontalPositions.Start)
+    ) {
       const modalBoundingLeft =
         triggerRef.current.getBoundingClientRect().right - modalWidth;
       return modalBoundingLeft < 0;
@@ -62,21 +68,22 @@ const Modal = ({
   };
 
   const getAbsoluteSpacing = () => {
-    if (anchorPosition === HorizontalPositions.Left) {
+    console.log("getAbsoluteSpacing", anchorPosition);
+    if (anchorPosition === HorizontalPositions.Start) {
       if (!modalExceedsWindow) {
-        return spacing.none.left;
+        return spacing.none.start;
       } else {
-        return spacing.none.right;
+        return spacing.none.end;
       }
     }
-    if (anchorPosition === HorizontalPositions.Right) {
+    if (anchorPosition === HorizontalPositions.End) {
       if (!modalExceedsWindow) {
-        return spacing.none.right;
+        return spacing.none.end;
       } else {
-        return spacing.none.left;
+        return spacing.none.start;
       }
     }
-    return spacing.none.left;
+    return spacing.none.start;
   };
 
   useOnClickOutside(modalRef, (e) => {

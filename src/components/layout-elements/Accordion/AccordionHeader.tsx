@@ -21,15 +21,15 @@ const AccordionHeader = ({ children }: AccordionHeaderProps) => {
       type="button"
       className={classNames(
         "input-elem tr-w-full tr-flex tr-items-center tr-justify-between",
-        spacing.threeXl.paddingLeft,
-        spacing.threeXl.paddingRight,
+        spacing.threeXl.paddingStart,
+        spacing.threeXl.paddingEnd,
         spacing.lg.paddingTop,
         spacing.lg.paddingBottom
       )}
       onClick={() => setIsExpanded?.(!isExpanded)}
     >
       <div
-        className={classNames("tr-flex tr-flex-1", spacing.threeXl.marginRight)}
+        className={classNames("tr-flex tr-flex-1", spacing.threeXl.marginEnd)}
       >
         {children}
       </div>
@@ -39,7 +39,7 @@ const AccordionHeader = ({ children }: AccordionHeaderProps) => {
             className={classNames(
               getColorVariantsFromColorThemeValue(defaultColors.lightText)
                 .textColor,
-              spacing.twoXs.negativeMarginRight,
+              spacing.twoXs.negativeMarginEnd,
               sizing.xl.height,
               sizing.xl.width
             )}
@@ -49,7 +49,7 @@ const AccordionHeader = ({ children }: AccordionHeaderProps) => {
             className={classNames(
               getColorVariantsFromColorThemeValue(defaultColors.lightText)
                 .textColor,
-              spacing.twoXs.negativeMarginRight,
+              spacing.twoXs.negativeMarginEnd,
               sizing.xl.height,
               sizing.xl.width
             )}

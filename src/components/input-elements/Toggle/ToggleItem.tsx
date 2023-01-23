@@ -44,8 +44,8 @@ const ToggleItem = ({ value, text, icon }: ToggleItemProps) => {
       type="button"
       className={classNames(
         "input-elem tr-flex tr-items-center tr-ring-1",
-        spacing.lg.paddingLeft,
-        spacing.lg.paddingRight,
+        spacing.lg.paddingStart,
+        spacing.lg.paddingEnd,
         spacing.xs.paddingTop,
         spacing.xs.paddingBottom,
         fontSize.sm,
@@ -60,7 +60,7 @@ const ToggleItem = ({ value, text, icon }: ToggleItemProps) => {
         <Icon
           className={classNames(
             "tr-opacity-70",
-            text ? spacing.xs.marginRight : "",
+            text ? spacing.xs.marginEnd : "",
             sizing.lg.height,
             sizing.lg.width
           )}

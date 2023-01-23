@@ -35,8 +35,8 @@ const MultiSelectBoxItem = ({ value, text }: MultiSelectBoxItemProps) => {
       onClick={() => handleValuesChange?.(value)}
       className={classNames(
         "input-elem tr-flex tr-items-center tr-justify-between tr-w-full",
-        spacing.twoXl.paddingLeft,
-        spacing.twoXl.paddingRight,
+        spacing.twoXl.paddingStart,
+        spacing.twoXl.paddingEnd,
         spacing.md.paddingTop,
         spacing.md.paddingBottom,
         fontSize.sm,
@@ -61,7 +61,7 @@ const MultiSelectBoxItem = ({ value, text }: MultiSelectBoxItemProps) => {
             ).textColor,
             getColorVariantsFromColorThemeValue(defaultColors.border)
               .borderColor,
-            spacing.lg.marginRight,
+            spacing.lg.marginEnd,
             borderRadius.sm.all,
             border.sm.all
           )}

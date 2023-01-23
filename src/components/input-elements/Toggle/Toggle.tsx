@@ -58,8 +58,8 @@ const Toggle = <T,>({
         getColorVariantsFromColorThemeValue(defaultColors.lightBackground)
           .bgColor,
         parseMarginTop(marginTop),
-        spacing.twoXs.paddingLeft,
-        spacing.twoXs.paddingRight,
+        spacing.twoXs.paddingStart,
+        spacing.twoXs.paddingEnd,
         spacing.twoXs.paddingTop,
         spacing.twoXs.paddingBottom,
         borderRadius.lg.all

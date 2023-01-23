@@ -24,7 +24,7 @@ const LegendItem = ({ name, color }: LegendItemProps) => (
     className={classNames(
       "termor-elem tr-inline-flex tr-items-center tr-truncate",
       getColorVariantsFromColorThemeValue(defaultColors.text).textColor,
-      spacing.md.marginRight
+      spacing.md.marginEnd
     )}
   >
     <svg
@@ -34,7 +34,7 @@ const LegendItem = ({ name, color }: LegendItemProps) => (
           .textColor,
         sizing.xs.height,
         sizing.xs.width,
-        spacing.xs.marginRight
+        spacing.xs.marginEnd
       )}
       fill="currentColor"
       viewBox="0 0 8 8"

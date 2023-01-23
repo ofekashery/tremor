@@ -29,12 +29,12 @@ import {
 const parseDecorationAlignment = (decorationAlignment: string) => {
   if (!decorationAlignment) return "";
   switch (decorationAlignment) {
-    case HorizontalPositions.Left:
-      return border.lg.left;
+    case HorizontalPositions.Start:
+      return border.lg.start;
     case VerticalPositions.Top:
       return border.lg.top;
-    case HorizontalPositions.Right:
-      return border.lg.right;
+    case HorizontalPositions.End:
+      return border.lg.end;
     case VerticalPositions.Bottom:
       return border.lg.bottom;
     default:
@@ -64,7 +64,7 @@ const Card = ({
   return (
     <div
       className={classNames(
-        "tremor-base tr-relative tr-w-full tr-mx-auto tr-text-left tr-ring-1",
+        "tremor-base tr-relative tr-w-full tr-mx-auto tr-text-start tr-ring-1",
         parseMarginTop(marginTop),
         parseHFullOption(hFull),
         parseMaxWidth(maxWidth),
@@ -76,8 +76,8 @@ const Card = ({
         getColorVariantsFromColorThemeValue(defaultColors.lightBorder)
           .ringColor,
         parseDecorationAlignment(decoration),
-        spacing.threeXl.paddingLeft,
-        spacing.threeXl.paddingRight,
+        spacing.threeXl.paddingStart,
+        spacing.threeXl.paddingEnd,
         spacing.threeXl.paddingTop,
         spacing.threeXl.paddingBottom,
         borderRadius.lg.all

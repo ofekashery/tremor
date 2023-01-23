@@ -18,8 +18,8 @@ const TableCell = ({
         className={classNames(
           "tr-align-middle tr-whitespace-nowrap tr-tabular-nums",
           parseTextAlignment(textAlignment),
-          spacing.twoXl.paddingLeft,
-          spacing.twoXl.paddingRight,
+          spacing.twoXl.paddingStart,
+          spacing.twoXl.paddingEnd,
           spacing.twoXl.paddingTop,
           spacing.twoXl.paddingBottom
         )}

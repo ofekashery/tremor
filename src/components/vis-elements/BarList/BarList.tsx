@@ -88,7 +88,7 @@ const BarList = ({
               <div
                 className={classNames(
                   "tr-absolute tr-max-w-full tr-flex",
-                  spacing.sm.left
+                  spacing.sm.start
                 )}
               >
                 {Icon ? (
@@ -97,7 +97,7 @@ const BarList = ({
                       "tr-flex-none",
                       sizing.lg.height,
                       sizing.lg.width,
-                      spacing.md.marginRight,
+                      spacing.md.marginEnd,
                       getColorVariantsFromColorThemeValue(
                         defaultColors.lightText
                       ).textColor

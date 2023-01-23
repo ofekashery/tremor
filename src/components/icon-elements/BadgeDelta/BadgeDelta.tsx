@@ -73,8 +73,8 @@ const BadgeDelta = ({
         >
           <Icon
             className={classNames(
-              text ? spacing.twoXs.negativeMarginLeft : "",
-              text ? spacing.xs.marginRight : "",
+              text ? spacing.twoXs.negativeMarginStart : "",
+              text ? spacing.xs.marginEnd : "",
               iconSizes[badgeSize].height,
               iconSizes[badgeSize].width
             )}

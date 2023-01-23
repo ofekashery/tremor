@@ -51,7 +51,7 @@ const ButtonInline = ({
   text,
   value,
   icon,
-  iconPosition = HorizontalPositions.Left,
+  iconPosition = HorizontalPositions.Start,
   handleClick, // Deprecated
   onClick,
   onSubmit,
@@ -122,7 +122,7 @@ const ButtonInline = ({
             disabled={isDisabled}
           >
             {showButtonIconOrSpinner &&
-            iconPosition !== HorizontalPositions.Right ? (
+            iconPosition !== HorizontalPositions.End ? (
               <ButtonIconOrSpinner
                 loading={loading}
                 iconSize={iconSize}
@@ -137,7 +137,7 @@ const ButtonInline = ({
               </p>
             }
             {showButtonIconOrSpinner &&
-            iconPosition === HorizontalPositions.Right ? (
+            iconPosition === HorizontalPositions.End ? (
               <ButtonIconOrSpinner
                 loading={loading}
                 iconSize={iconSize}

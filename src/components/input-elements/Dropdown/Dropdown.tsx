@@ -106,8 +106,8 @@ const Dropdown = <T,>({
         className={classNames(
           "input-elem tr-flex tr-justify-between tr-items-center tr-w-full",
           "focus:tr-outline-0 focus:tr-ring-0",
-          Icon ? spacing.xl.paddingLeft : spacing.twoXl.paddingLeft,
-          spacing.twoXl.paddingRight,
+          Icon ? spacing.xl.paddingStart : spacing.twoXl.paddingStart,
+          spacing.twoXl.paddingEnd,
           spacing.sm.paddingTop,
           spacing.sm.paddingBottom
         )}
@@ -122,7 +122,7 @@ const Dropdown = <T,>({
                 sizing.lg.width,
                 getColorVariantsFromColorThemeValue(defaultColors.lightText)
                   .textColor,
-                spacing.lg.marginRight
+                spacing.lg.marginEnd
               )}
               aria-hidden="true"
             />
@@ -149,7 +149,7 @@ const Dropdown = <T,>({
             "tr-flex-none",
             sizing.lg.height,
             sizing.lg.width,
-            spacing.twoXs.negativeMarginRight,
+            spacing.twoXs.negativeMarginEnd,
             getColorVariantsFromColorThemeValue(defaultColors.lightText)
               .textColor
           )}
