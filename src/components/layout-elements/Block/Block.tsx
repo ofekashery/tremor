@@ -28,7 +28,7 @@ export interface BlockProps {
 const Block = ({
   maxWidth = "max-w-none",
   spaceY = "",
-  textAlignment = TextAlignments.Left,
+  textAlignment = TextAlignments.Start,
   truncate = false,
   marginTop = "mt-0",
   children,

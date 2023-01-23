@@ -17,7 +17,7 @@ interface TableHeaderCellProps {
 }
 
 const TableHeaderCell = ({
-  textAlignment = TextAlignments.Left,
+  textAlignment = TextAlignments.Start,
   children,
 }: TableHeaderCellProps) => (
   <>

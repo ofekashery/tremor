@@ -31,7 +31,7 @@ export interface TextProps {
 
 const Text = ({
   color = BaseColors.Gray,
-  textAlignment = TextAlignments.Left,
+  textAlignment = TextAlignments.Start,
   truncate = false,
   height = "",
   marginTop = "mt-0",

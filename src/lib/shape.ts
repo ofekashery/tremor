@@ -25,7 +25,7 @@ export const borderRadius = {
     top: "tr-rounded-t-lg",
     end: "tr-rounded-e-lg",
     bottom: "tr-rounded-b-lg",
-    all: "tr-rounded-sg",
+    all: "tr-rounded-lg",
   },
   full: {
     start: "tr-rounded-s-full",

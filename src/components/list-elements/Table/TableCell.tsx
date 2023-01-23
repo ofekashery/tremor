@@ -9,7 +9,7 @@ export interface TableCellProps {
 }
 
 const TableCell = ({
-  textAlignment = TextAlignments.Left,
+  textAlignment = TextAlignments.Start,
   children,
 }: TableCellProps) => {
   return (
