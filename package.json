@@ -1,6 +1,6 @@
 {
-  "name": "@tremor/react",
-  "version": "0.0.0-development",
+  "name": "@ofekashery/tremor-rtl",
+  "version": "1.6.3",
   "description": "The React library to build dashboards faster.",
   "scripts": {
     "rollup": "rollup -c",

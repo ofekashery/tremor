@@ -16,7 +16,7 @@ export const spacing = {
     end: "tr-end-0",
     top: "tr-top-0",
     bottom: "tr-bottom-0",
-    spaceX: "tr-space-x-0",
+    spaceX: "tr-space-s-0",
   },
   px: {
     paddingStart: "tr-ps-px",
@@ -35,7 +35,7 @@ export const spacing = {
     end: "tr-end-px",
     top: "tr-top-px",
     bottom: "tr-bottom-px",
-    spaceX: "tr-space-x-px",
+    spaceX: "tr-space-s-px",
   },
   threeXs: {
     paddingStart: "tr-ps-0.5",
@@ -54,7 +54,7 @@ export const spacing = {
     end: "tr-end-0.5",
     top: "tr-top-0.5",
     bottom: "tr-bottom-0.5",
-    spaceX: "tr-space-x-0.5",
+    spaceX: "tr-space-s-0.5",
   },
   twoXs: {
     paddingStart: "tr-ps-1",
@@ -73,7 +73,7 @@ export const spacing = {
     end: "tr-end-1",
     top: "tr-top-1",
     bottom: "tr-bottom-1",
-    spaceX: "tr-space-x-1",
+    spaceX: "tr-space-s-1",
   },
   xs: {
     paddingStart: "tr-ps-1.5",
@@ -92,7 +92,7 @@ export const spacing = {
     end: "tr-end-1.5",
     top: "tr-top-1.5",
     bottom: "tr-bottom-1.5",
-    spaceX: "tr-space-x-1.5",
+    spaceX: "tr-space-s-1.5",
   },
   sm: {
     paddingStart: "tr-ps-2",
@@ -111,7 +111,7 @@ export const spacing = {
     end: "tr-end-2",
     top: "tr-top-2",
     bottom: "tr-bottom-2",
-    spaceX: "tr-space-x-2",
+    spaceX: "tr-space-s-2",
   },
   md: {
     paddingStart: "tr-ps-2.5",
@@ -130,7 +130,7 @@ export const spacing = {
     end: "tr-end-2.5",
     top: "tr-top-2.5",
     bottom: "tr-bottom-2.5",
-    spaceX: "tr-space-x-2.5",
+    spaceX: "tr-space-s-2.5",
   },
   lg: {
     paddingStart: "tr-ps-3",
@@ -149,7 +149,7 @@ export const spacing = {
     end: "tr-end-3",
     top: "tr-top-3",
     bottom: "tr-bottom-3",
-    spaceX: "tr-space-x-3",
+    spaceX: "tr-space-s-3",
   },
   xl: {
     paddingStart: "tr-ps-3.5",
@@ -168,7 +168,7 @@ export const spacing = {
     end: "tr-end-3.5",
     top: "tr-top-3.5",
     bottom: "tr-bottom-3.5",
-    spaceX: "tr-space-x-3.5",
+    spaceX: "tr-space-s-3.5",
   },
   twoXl: {
     paddingStart: "tr-ps-4",
@@ -187,7 +187,7 @@ export const spacing = {
     end: "tr-end-4",
     top: "tr-top-4",
     bottom: "tr-bottom-4",
-    spaceX: "tr-space-x-4",
+    spaceX: "tr-space-s-4",
   },
   threeXl: {
     paddingStart: "tr-ps-6",
@@ -206,7 +206,7 @@ export const spacing = {
     end: "tr-end-6",
     top: "tr-top-6",
     bottom: "tr-bottom-6",
-    spaceX: "tr-space-x-6",
+    spaceX: "tr-space-s-6",
   },
   fourXl: {
     paddingStart: "tr-ps-8",
@@ -225,6 +225,6 @@ export const spacing = {
     end: "tr-end-8",
     top: "tr-top-8",
     bottom: "tr-bottom-8",
-    spaceX: "tr-space-x-8",
+    spaceX: "tr-space-s-8",
   },
 };

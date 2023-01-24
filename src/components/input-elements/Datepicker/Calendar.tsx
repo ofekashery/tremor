@@ -90,7 +90,7 @@ const CalendarHeader = ({
         spacing.sm.paddingBottom
       )}
     >
-      <div className="tr-flex tr-items-center tr-space-x-1">
+      <div className="tr-flex tr-items-center tr-space-s-1">
         <button
           type="button"
           hidden={!enableYearPagination}
@@ -171,7 +171,7 @@ const CalendarHeader = ({
       >
         {displayedTitle}
       </h2>
-      <div className="tr-flex tr-items-center tr-space-x-1">
+      <div className="tr-flex tr-items-center tr-space-s-1">
         <button
           type="button"
           name="nextMonth"

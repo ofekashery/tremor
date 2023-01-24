@@ -44,8 +44,8 @@ export const ChartTooltipRow = ({
   name,
   color,
 }: ChartTooltipRowProps) => (
-  <div className="tr-flex tr-items-center tr-justify-between tr-space-x-8">
-    <div className="tr-flex tr-items-center tr-space-x-2">
+  <div className="tr-flex tr-items-center tr-justify-between tr-space-s-8">
+    <div className="tr-flex tr-items-center tr-space-s-2">
       <span
         className={classNames(
           "tr-shrink-0",

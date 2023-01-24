@@ -227,7 +227,7 @@ const DatepickerHeader = ({
       spacing.sm.paddingBottom
     )}
   >
-    <div className="tr-flex tr-items-center tr-space-x-1">
+    <div className="tr-flex tr-items-center tr-space-s-1">
       <button
         type="button"
         hidden={!enableYearPagination}
@@ -303,7 +303,7 @@ const DatepickerHeader = ({
     >
       {format(firstDayCurrentMonth, "MMMM yyyy")}
     </h2>
-    <div className="tr-flex tr-items-center tr-space-x-1">
+    <div className="tr-flex tr-items-center tr-space-s-1">
       <button
         onClick={() => nextMonth(firstDayCurrentMonth, setCurrentMonth)}
         type="button"
